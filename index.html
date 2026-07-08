@@ -3,88 +3,330 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techfest | IIT Bombay</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <title>Techfest 2026 | IIT Bombay — Asia's Largest Science & Technology Festival</title>
+    <meta name="description" content="Techfest, IIT Bombay — Asia's Largest Science and Technology Festival. Competitions, exhibitions, workshops, lectures, and more.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
         <div class="logo">
-            <img src="assets/techfest-modified.png" alt="Techfest Logo" id="nav-logo" onerror="this.src='https://techfest.org/favicon.ico'">
+            <img src="assets/techfest-modified.png" alt="Techfest Logo" id="nav-logo">
             <span>TECHFEST</span>
         </div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#competitions">Competitions</a></li>
             <li><a href="#exhibitions">Exhibitions</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#register" class="nav-cta">Register Now</a></li>
         </ul>
     </nav>
 
-    <div class="parallax-container">
-        
-        <section class="hero">
-            <div class="background-layer layer" data-speed="0.2"></div>
-            <div class="midground-layer layer" data-speed="0.5">
-                <div class="floating-cube cube1"></div>
-                <div class="floating-cube cube2"></div>
-                <div class="floating-cube cube3"></div>
+    <section class="hero" id="hero">
+        <div class="hero-bg-layer" data-parallax-speed="0.3">
+            <img src="assets/hero-bg.png" alt="" class="hero-bg-img">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" data-parallax-speed="0.5"></div>
+        <div class="hero-content" data-parallax-speed="0.8">
+            <div class="hero-badge">EST. 1998</div>
+            <h1 class="hero-title">
+                <span class="title-line">TECH</span>
+                <span class="title-line accent">FEST</span>
+            </h1>
+            <p class="hero-subtitle">ASIA'S LARGEST SCIENCE & TECHNOLOGY FESTIVAL</p>
+            <p class="hero-campus">IIT BOMBAY</p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="175000">0</span>
+                    <span class="stat-label">Footfall</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="2500">0</span>
+                    <span class="stat-label">Colleges</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" data-target="78">0</span>
+                    <span class="stat-label">Countries</span>
+                </div>
             </div>
-            <div class="foreground-layer layer" data-speed="0.8">
-                <h1 class="glitch" data-text="TECHFEST">TECHFEST</h1>
-                <p class="subtitle">ASIA'S LARGEST SCIENCE & TECHNOLOGY FESTIVAL</p>
-                <p class="iit-bombay">IIT BOMBAY</p>
-                <a href="#about" class="explore-btn">ENTER THE FUTURE</a>
+            <a href="#about" class="hero-cta">Explore Techfest<span class="cta-arrow">&darr;</span></a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
             </div>
-        </section>
+            <span>Scroll to discover</span>
+        </div>
+    </section>
 
-        <section id="about" class="content-section">
-            <div class="content-wrapper layer" data-speed="0.9">
-                <div class="text-content">
-                    <h2 class="section-title">THE GENESIS</h2>
-                    <p>Since its inception in 1998, Techfest has grown to become Asia's Largest Science and Technology Festival. Providing a platform for the brightest minds to showcase their innovation, Techfest is synonymous with cutting-edge technology, robotic combat, and revolutionary ideas.</p>
+    <section class="parallax-image-break" style="background-image: url('assets/parallax-bg.png');">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-break-text" data-parallax-speed="0.6">
+            <span class="tagline">WHERE INNOVATION MEETS IMAGINATION</span>
+        </div>
+    </section>
+
+    <section id="about" class="section section-about">
+        <div class="section-inner">
+            <div class="about-grid">
+                <div class="about-text reveal-left">
+                    <span class="section-label">01 — THE GENESIS</span>
+                    <h2 class="section-heading">Redefining the Future<br>Since <span class="highlight">1998</span></h2>
+                    <p>Since its inception, Techfest has grown to become Asia's Largest Science and Technology Festival, organized by the students of IIT Bombay. With a footfall exceeding 175,000 and participation from over 2,500 colleges across 78 countries, Techfest stands as a global beacon of innovation.</p>
+                    <p>From robotics to artificial intelligence, from space technology to sustainable energy — Techfest provides a platform where the brightest minds converge to showcase groundbreaking ideas that shape tomorrow.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">&#9670;</div>
+                            <span>25+ Years of Innovation</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">&#9670;</div>
+                            <span>100+ Events & Competitions</span>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">&#9670;</div>
+                            <span>Global Speaker Series</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="image-content parallax-img" data-speed="0.4">
-                    <div class="glass-panel"></div>
+                <div class="about-image reveal-right">
+                    <div class="image-frame">
+                        <img src="assets/hero-bg.png" alt="IIT Bombay Campus">
+                        <div class="image-frame-border"></div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="competitions" class="content-section alternate">
-            <div class="content-wrapper layer" data-speed="1.1">
-                <div class="section-header">
-                    <h2 class="section-title">ARENAS OF GLORY</h2>
-                    <p>Pushing the boundaries of human ingenuity</p>
-                </div>
-                <div class="cards-container">
-                    <div class="card" data-speed="0.7">
+    <section class="parallax-image-break" style="background-image: url('assets/robowars.png');">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-break-text" data-parallax-speed="0.6">
+            <span class="tagline">BATTLE. BUILD. CONQUER.</span>
+        </div>
+    </section>
+
+    <section id="competitions" class="section section-competitions">
+        <div class="section-inner">
+            <span class="section-label center">02 — ARENAS OF GLORY</span>
+            <h2 class="section-heading center">Competitions That<br>Push <span class="highlight">Boundaries</span></h2>
+            <p class="section-desc center">From savage robot combat to intricate autonomous navigation — our competitions test the limits of engineering brilliance.</p>
+            <div class="competitions-grid">
+                <div class="comp-card reveal-up" data-parallax-speed="0.95">
+                    <div class="comp-card-img">
+                        <img src="assets/robowars.png" alt="Robowars">
+                    </div>
+                    <div class="comp-card-content">
+                        <span class="comp-tag">FLAGSHIP</span>
                         <h3>Robowars</h3>
-                        <p>Witness metal clash in the ultimate combat robotics championship.</p>
-                        <div class="card-glow"></div>
+                        <p>Watch 120kg behemoths of steel clash in India's most iconic robot combat championship. Fire, sparks, and pure destruction.</p>
+                        <span class="comp-prize">Prize Pool: ₹5,00,000</span>
                     </div>
-                    <div class="card" data-speed="0.9">
-                        <h3>Cozmoclench</h3>
-                        <p>Design autonomous robots to navigate complex obstacles.</p>
-                        <div class="card-glow"></div>
+                </div>
+                <div class="comp-card reveal-up" data-parallax-speed="1.05">
+                    <div class="comp-card-img">
+                        <img src="assets/workshops.png" alt="Meshmerize">
                     </div>
-                    <div class="card" data-speed="1.1">
+                    <div class="comp-card-content">
+                        <span class="comp-tag">ROBOTICS</span>
                         <h3>Meshmerize</h3>
-                        <p>Line-following robotics taken to the extreme.</p>
-                        <div class="card-glow"></div>
+                        <p>Design the fastest autonomous line-following robot. Navigate complex meshes at breakneck speed with zero room for error.</p>
+                        <span class="comp-prize">Prize Pool: ₹2,00,000</span>
+                    </div>
+                </div>
+                <div class="comp-card reveal-up" data-parallax-speed="1.0">
+                    <div class="comp-card-img">
+                        <img src="assets/exhibitions.png" alt="Cozmoclench">
+                    </div>
+                    <div class="comp-card-content">
+                        <span class="comp-tag">AUTONOMOUS</span>
+                        <h3>Cozmoclench</h3>
+                        <p>Build autonomous bots that navigate unknown terrains, avoid obstacles, and reach destinations — completely unmanned.</p>
+                        <span class="comp-prize">Prize Pool: ₹3,00,000</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer>
-            <div class="footer-content layer" data-speed="1.0">
-                <h2>TECHFEST | IIT BOMBAY</h2>
-                <p>Inspiring Innovation Since 1998</p>
-                <p>&copy; 2026 Techfest. All Rights Reserved.</p>
+    <section class="parallax-image-break" style="background-image: url('assets/exhibitions.png');">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-break-text" data-parallax-speed="0.6">
+            <span class="tagline">SEE THE FUTURE. TOUCH THE FUTURE.</span>
+        </div>
+    </section>
+
+    <section id="exhibitions" class="section section-exhibitions">
+        <div class="section-inner">
+            <div class="exhibitions-layout">
+                <div class="exhibitions-image reveal-left">
+                    <div class="image-frame large">
+                        <img src="assets/exhibitions.png" alt="Tech Exhibitions">
+                        <div class="image-frame-border"></div>
+                    </div>
+                </div>
+                <div class="exhibitions-text reveal-right">
+                    <span class="section-label">03 — EXHIBITIONS</span>
+                    <h2 class="section-heading">Where Tomorrow's<br>Technology Lives <span class="highlight">Today</span></h2>
+                    <p>Step into a world of holographic displays, autonomous vehicles, humanoid robots, and space-grade technology. Our exhibition hall hosts over 50 cutting-edge showcases from industry leaders and student innovators alike.</p>
+                    <div class="exhibition-list">
+                        <div class="exhibition-item">
+                            <span class="ex-number">01</span>
+                            <div>
+                                <h4>Humanoid Robotics Zone</h4>
+                                <p>Interact with state-of-the-art humanoid robots and AI companions.</p>
+                            </div>
+                        </div>
+                        <div class="exhibition-item">
+                            <span class="ex-number">02</span>
+                            <div>
+                                <h4>Space Technology Pavilion</h4>
+                                <p>Explore rocket engines, satellite models, and Mars habitat simulations.</p>
+                            </div>
+                        </div>
+                        <div class="exhibition-item">
+                            <span class="ex-number">03</span>
+                            <div>
+                                <h4>Sustainable Energy Lab</h4>
+                                <p>Discover innovations in solar, wind, and hydrogen fuel cell technology.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-    </div>
+    <section class="parallax-image-break" style="background-image: url('assets/workshops.png');">
+        <div class="parallax-overlay"></div>
+        <div class="parallax-break-text" data-parallax-speed="0.6">
+            <span class="tagline">LEARN. CREATE. INNOVATE.</span>
+        </div>
+    </section>
+
+    <section id="workshops" class="section section-workshops">
+        <div class="section-inner">
+            <span class="section-label center">04 — WORKSHOPS</span>
+            <h2 class="section-heading center">Hands-On Learning From<br>The <span class="highlight">Best</span></h2>
+            <p class="section-desc center">Immersive workshops led by industry experts. From drone building to machine learning — learn by doing.</p>
+            <div class="workshops-grid">
+                <div class="workshop-card reveal-up">
+                    <div class="ws-icon">&#9881;</div>
+                    <h3>Drone Building</h3>
+                    <p>Build a fully functional quadcopter from scratch and fly it before the workshop ends.</p>
+                    <span class="ws-duration">2-Day Workshop</span>
+                </div>
+                <div class="workshop-card reveal-up">
+                    <div class="ws-icon">&#10047;</div>
+                    <h3>Machine Learning</h3>
+                    <p>Train neural networks, build classifiers, and deploy real AI models hands-on.</p>
+                    <span class="ws-duration">3-Day Workshop</span>
+                </div>
+                <div class="workshop-card reveal-up">
+                    <div class="ws-icon">&#9883;</div>
+                    <h3>IoT & Embedded</h3>
+                    <p>Create connected devices using Arduino, Raspberry Pi, and cloud platforms.</p>
+                    <span class="ws-duration">2-Day Workshop</span>
+                </div>
+                <div class="workshop-card reveal-up">
+                    <div class="ws-icon">&#9733;</div>
+                    <h3>3D Printing</h3>
+                    <p>Design, model, and print your own functional prototypes from concept to reality.</p>
+                    <span class="ws-duration">1-Day Workshop</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax-image-break tall" style="background-image: url('assets/stage.png');">
+        <div class="parallax-overlay dark"></div>
+        <div class="parallax-break-text" data-parallax-speed="0.6">
+            <span class="tagline">THE GRAND SPECTACLE</span>
+        </div>
+    </section>
+
+    <section id="experience" class="section section-experience">
+        <div class="section-inner">
+            <span class="section-label center">05 — THE EXPERIENCE</span>
+            <h2 class="section-heading center">More Than a Festival.<br>A <span class="highlight">Movement</span>.</h2>
+            <div class="experience-grid">
+                <div class="experience-card large reveal-up">
+                    <img src="assets/stage.png" alt="Lecture Series">
+                    <div class="experience-card-overlay">
+                        <h3>International Lecture Series</h3>
+                        <p>Nobel laureates, tech visionaries, and world leaders share their insights on the Techfest stage.</p>
+                    </div>
+                </div>
+                <div class="experience-card reveal-up">
+                    <img src="assets/hero-bg.png" alt="Campus Night">
+                    <div class="experience-card-overlay">
+                        <h3>Campus Nights</h3>
+                        <p>Live performances, EDM, and cultural showcases under the IIT Bombay sky.</p>
+                    </div>
+                </div>
+                <div class="experience-card reveal-up">
+                    <img src="assets/parallax-bg.png" alt="Hackathon">
+                    <div class="experience-card-overlay">
+                        <h3>24-Hour Hackathon</h3>
+                        <p>Code through the night. Build solutions. Win big.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="section section-cta">
+        <div class="cta-bg" data-parallax-speed="0.4">
+            <img src="assets/parallax-bg.png" alt="" class="cta-bg-img">
+        </div>
+        <div class="cta-overlay"></div>
+        <div class="section-inner cta-content" data-parallax-speed="0.7">
+            <h2 class="cta-heading">Ready to Be Part of<br>Something <span class="highlight">Extraordinary</span>?</h2>
+            <p class="cta-text">Join 175,000+ innovators, engineers, and dreamers at the intersection of science and imagination.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-primary">Register for Techfest 2026</a>
+                <a href="#" class="btn-secondary">View Schedule</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/techfest-modified.png" alt="Techfest Logo" class="footer-logo">
+                    <h3>TECHFEST</h3>
+                    <p>IIT Bombay, Powai<br>Mumbai 400076, India</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#competitions">Competitions</a>
+                    <a href="#exhibitions">Exhibitions</a>
+                    <a href="#workshops">Workshops</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Connect</h4>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter / X</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">YouTube</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Contact</h4>
+                    <a href="mailto:techfest@iitb.ac.in">techfest@iitb.ac.in</a>
+                    <a href="#">+91 22 2576 4000</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Techfest, IIT Bombay. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="main.js"></script>
 </body>
