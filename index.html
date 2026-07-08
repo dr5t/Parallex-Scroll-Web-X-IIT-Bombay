@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techfest | IIT Bombay</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="Techfest Logo" id="nav-logo" onerror="this.src='https://techfest.org/favicon.ico'">
+            <span>TECHFEST</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#competitions">Competitions</a></li>
+            <li><a href="#exhibitions">Exhibitions</a></li>
+        </ul>
+    </nav>
+
+    <div class="parallax-container">
+        
+        <section class="hero">
+            <div class="background-layer layer" data-speed="0.2"></div>
+            <div class="midground-layer layer" data-speed="0.5">
+                <div class="floating-cube cube1"></div>
+                <div class="floating-cube cube2"></div>
+                <div class="floating-cube cube3"></div>
+            </div>
+            <div class="foreground-layer layer" data-speed="0.8">
+                <h1 class="glitch" data-text="TECHFEST">TECHFEST</h1>
+                <p class="subtitle">ASIA'S LARGEST SCIENCE & TECHNOLOGY FESTIVAL</p>
+                <p class="iit-bombay">IIT BOMBAY</p>
+                <a href="#about" class="explore-btn">ENTER THE FUTURE</a>
+            </div>
+        </section>
+
+        <section id="about" class="content-section">
+            <div class="content-wrapper layer" data-speed="0.9">
+                <div class="text-content">
+                    <h2 class="section-title">THE GENESIS</h2>
+                    <p>Since its inception in 1998, Techfest has grown to become Asia's Largest Science and Technology Festival. Providing a platform for the brightest minds to showcase their innovation, Techfest is synonymous with cutting-edge technology, robotic combat, and revolutionary ideas.</p>
+                </div>
+                <div class="image-content parallax-img" data-speed="0.4">
+                    <div class="glass-panel"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competitions" class="content-section alternate">
+            <div class="content-wrapper layer" data-speed="1.1">
+                <div class="section-header">
+                    <h2 class="section-title">ARENAS OF GLORY</h2>
+                    <p>Pushing the boundaries of human ingenuity</p>
+                </div>
+                <div class="cards-container">
+                    <div class="card" data-speed="0.7">
+                        <h3>Robowars</h3>
+                        <p>Witness metal clash in the ultimate combat robotics championship.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card" data-speed="0.9">
+                        <h3>Cozmoclench</h3>
+                        <p>Design autonomous robots to navigate complex obstacles.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                    <div class="card" data-speed="1.1">
+                        <h3>Meshmerize</h3>
+                        <p>Line-following robotics taken to the extreme.</p>
+                        <div class="card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content layer" data-speed="1.0">
+                <h2>TECHFEST | IIT BOMBAY</h2>
+                <p>Inspiring Innovation Since 1998</p>
+                <p>&copy; 2026 Techfest. All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
