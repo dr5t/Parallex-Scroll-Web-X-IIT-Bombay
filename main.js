@@ -8,6 +8,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let ticking = false;
     let statsAnimated = false;
+    let parallaxData = [];
+
+    function initParallax() {
+        parallaxData = Array.from(parallaxElements).map(el => {
+            const currentTransform = el.style.transform;
+            el.style.transform = 'none';
+            const rect = el.getBoundingClientRect();
+            const absoluteTop = rect.top + window.scrollY;
+            const height = rect.height;
+            el.style.transform = currentTransform;
+
+            return {
+                el,
+                absoluteTop,
+                height,
+                speed: parseFloat(el.getAttribute('data-parallax-speed'))
+            };
+        });
+    }
+
+    initParallax();
+    window.addEventListener('resize', initParallax);
 
     function onScroll() {
         if (!ticking) {
@@ -26,14 +48,14 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.classList.remove('scrolled');
         }
 
-        parallaxElements.forEach(el => {
-            const rect = el.getBoundingClientRect();
-            const speed = parseFloat(el.getAttribute('data-parallax-speed'));
+        parallaxData.forEach(data => {
+            const currentTop = data.absoluteTop - scrollY;
+            const currentBottom = currentTop + data.height;
 
-            if (rect.bottom > 0 && rect.top < windowHeight) {
-                const centerOffset = rect.top - windowHeight / 2;
-                const yPos = centerOffset * (1 - speed) * 0.6;
-                el.style.transform = `translate3d(0, ${yPos}px, 0)`;
+            if (currentBottom > 0 && currentTop < windowHeight) {
+                const centerOffset = currentTop - windowHeight / 2;
+                const yPos = centerOffset * (1 - data.speed) * 0.6;
+                data.el.style.transform = `translate3d(0, ${yPos}px, 0)`;
             }
         });
 
