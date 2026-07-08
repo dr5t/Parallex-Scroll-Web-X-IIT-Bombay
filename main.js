@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const navbar = document.getElementById('navbar');
     const parallaxElements = document.querySelectorAll('[data-parallax-speed]');
-    const revealElements = document.querySelectorAll('.reveal-left, .reveal-right, .reveal-up');
+    const revealSelector = '.reveal-left, .reveal-right, .reveal-up, .reveal-down, .reveal-scale, .reveal-rotate, .reveal-flip, .fountain-item';
+    const revealElements = document.querySelectorAll(revealSelector);
     const statNumbers = document.querySelectorAll('.stat-number[data-target]');
 
     let ticking = false;
@@ -38,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         revealElements.forEach(el => {
             const rect = el.getBoundingClientRect();
-            if (rect.top < windowHeight * 0.85) {
+            if (rect.top < windowHeight * 0.88) {
                 el.classList.add('visible');
             }
         });
@@ -86,9 +87,9 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
         revealElements.forEach(el => {
             const rect = el.getBoundingClientRect();
-            if (rect.top < window.innerHeight * 0.85) {
+            if (rect.top < window.innerHeight * 0.88) {
                 el.classList.add('visible');
             }
         });
-    }, 100);
+    }, 200);
 });
